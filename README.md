@@ -9,12 +9,12 @@
 1. Abra o terminal e utilize o comando `chmod 666 /var/run/docker.sock`
 2. Na sequência abra o dashboard do Jenkins
 3. Iremos criar o primeiro job:
-   1. Vá em `New Item`, de o nome de `bake`, selecione `Pipeline` e clique em ok
+   1. Vá em `New Item`, dê o nome de `bake`, selecione `Pipeline` e clique em ok
    2. Selecione a aba `Pipeline`, em `Definition` altere para a opção `Pipeline script from SCM`
    3. Em `SCM` altere para `Git`, no campo `Repository URL` coloque `https://github.com/gustavoboliveira/devops-ilegra-jenkins` e em `Credentials` insira seu login e senha do Github
    4. Desça a página até encontrar o campo `Script Path` e insira `bake/Jenkinsfile`, depois clique em `Save`
 4. Iremos criar o segundo job:
-   1. Vá em `New Item`, de o nome de `launch`, selecione `Pipeline` e clique em ok 
+   1. Vá em `New Item`, dê o nome de `launch`, selecione `Pipeline` e clique em ok 
    2. Selecione a aba `Pipeline`, em `Definition` altere para a opção `Pipeline script from SCM`
    3. Em `SCM` altere para `Git`, no campo `Repository URL` coloque `https://github.com/gustavoboliveira/devops-ilegra-jenkins` e em `Credentials` insira seu login e senha do Github
    4. Desça a página até encontrar o campo `Script Path` e insira `launch/Jenkinsfile`, depois clique em `Save`
