@@ -1,0 +1,13 @@
+pipeline {
+	agent any
+	
+	stages {
+	
+		stage ('Deploy docker image') {
+			steps {
+				sh 'docker run -it --rm -p 8081:8080 calculator:1.0'
+        		}
+        	}
+    	}
+}
+
