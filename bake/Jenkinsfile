@@ -1,10 +1,13 @@
 pipeline {
 	agent any
 	
-	stage('Bake a docker image') {
-		steps {
-			sh 'chmod 666 /var/run/docker.sock'
-			sh 'packer build bake/build.json'
+	stages {
+	
+		stage ('Bake a docker image') {
+			steps {
+				sh 'chmod 666 /var/run/docker.sock'
+				sh 'packer build bake/build.json'
+        		}
         	}
     	}
 }
