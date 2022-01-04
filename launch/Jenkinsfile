@@ -5,7 +5,7 @@ pipeline {
 	
 		stage ('Deploy docker image') {
 			steps {
-				sh 'docker run -it --rm --network host calculator:1.0'
+				sh 'docker run -it --rm --network host -d calculator:1.0'
         		}
         	}
     	}
